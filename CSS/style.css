@@ -16,10 +16,10 @@
   display: inline-block;
   position: relative;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0 10px;
   color: black;
-  font-weight: 700;
+  font-weight: 400;
   transition: color 0.1s linear;
 }
 .header__item_title:after {
