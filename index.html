@@ -3,56 +3,295 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="./img/icon.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Future project</title>
   </head>
   <body>
-    <header>
-      <div class="header">
-        <div class="header__container">
-          <img class="img__logo" src="./img/logo.jpg" alt="" />
-          <div class="header__item">
-            <a class="header__item_title" href="">Phones</a>
-            <a class="header__item_title" href="">Laptops</a>
-            <a class="header__item_title" href="">PlayStations</a>
-            <a class="header__item_title" href="">Accessories</a>
+    <!--! navbar  -->
+    <nav class="nav">
+      <div class="navbar">
+        <div class="contayner">
+          <div class="nav_top">
+            <div class="nav_top__left">
+              <p>Folow Us</p>
+              <img src="./img/instagram.svg" alt="instagram" />
+              <img src="./img/facebook.svg" alt="facebook" />
+              <img src="./img/twitter.svg" alt="twitter" />
+            </div>
+            <div class="nav_top__right">
+              <div id="name"></div>
+              <a href="" id="registerBtn" class="navbar_reg">Sign up</a>
+              <a href="" id="loginTrigger" class="navbar_reg">Log in</a>
+              <a href="" id="logout" class="navbar_reg">Log out</a>
+              <p id="username"></p>
+            </div>
           </div>
-          <form class="search">
-            <input class="search__input" type="search" placeholder="Search" />
-            <button class="search__btn">Search</button>
-          </form>
-          <div class="register">
-            <a href="" id="registerBtn" class="navbar_reg">Sign up</a>
-            <a href="" id="loginTrigger" class="navbar_reg">Log in</a>
-            <a href="" id="logout" class="navbar_reg">Log out</a>
+          <div class="nav_bottom">
+            <div class="add">
+              <img src="./IMG/icon-add.png" alt="" />
+              <h2 class="logo">Add product</h2>
+            </div>
+
+            <form class="search">
+              <input class="search__input" type="search" placeholder="Search" />
+              <button class="btn">Search</button>
+            </form>
+            <div class="text_future">
+              <img src="./img/logo.png" width="200px" alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <section class="section">
-        <div class="slider">
-          <div class="slides">
-            <div class="slide">
-              <img src="./img/images.jpeg" alt="Slide 1" />
-            </div>
-            <div class="slide">
-              <img src="./img/slider2.avif" alt="Slide 2" />
-            </div>
-            <div class="slide">
-              <img src="./img/slider3.avif" alt="Slide 3" />
-            </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <!--! Login and registration  -->
+
+    <form class="form modal">
+      <h3>Sign up</h3>
+      <input id="usernameInp" type="text" placeholder="Username" />
+      <input id="emailInp" type="email" placeholder="Email" />
+      <input id="passwordInp" type="password" placeholder="Password" />
+      <input id="confirmInp" type="password" placeholder="Confirm password" />
+      <button id="signUp" class="glow-on-hover">Sign up</button>
+    </form>
+
+    <form class="loginForm modal">
+      <h3>Log in</h3>
+      <input id="loginEmailInp" type="email" placeholder="Email" />
+      <input id="loginPasswordInp" type="password" placeholder="Password" />
+      <button id="loginBtn" class="glow-on-hover">Log in</button>
+    </form>
+
+    <!--! add product  -->
+
+    <form class="addProduct modal" style="display: none">
+      <h3>Add product</h3>
+      <input id="imgInp" type="text" placeholder="URL to image" />
+      <input id="titleInp" type="text" placeholder="Title" />
+      <input id="priceInp" type="text" placeholder="Price" />
+      <input id="categoryInp" type="text" placeholder="Category" />
+      <textarea
+        id="descriptionArea"
+        placeholder="Description"
+        class="descriptions"
+      ></textarea>
+      <button id="addProductBtn" class="glow-on-hover">Add product</button>
+    </form>
+
+    <form class="editProduct modal" style="display: none">
+      <h3>Edit product</h3>
+      <input id="imgInpEdit" type="text" placeholder="URL to image" />
+      <input iАd="titleInpEdit" type="text" placeholder="Title" />
+      <input id="priceInpEdit" type="text" placeholder="Price" />
+      <input id="categoryInpEdit" type="text" placeholder="Category" />
+      <textarea
+        id="descriptionAreaEdit"
+        placeholder="Description"
+        class="descriptions"
+      ></textarea>
+      <button id="addProductBtn" class="glow-on-hover">Confirm changes</button>
+    </form>
+
+    <!--! categories -->
+    <div class="categories">
+      <div class="catalog-list-row" style="position: relative">
+        <h2>Catalog</h2>
+        <div class="catalog__content d-flex" id="catalog__content">
+          <div class="catalog-left-menu">
+            <ul
+              class="left-catalog-menu no-select customScroll"
+              style="position: static; top: 20px"
+            >
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Rings</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Earrings</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Pendants</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Chains</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Necklaces</span>
+
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Bracelets</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Beads</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Garnitures</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+
+              <li class="left-catalog-section first-level">
+                <div class="left-catalog-section-title">
+                  <span class="first-level">Brooches</span>
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns=""
+                  >
+                    <path
+                      d="M1 1.25171L6.08389 6.3356L11.1678 1.25171"
+                      stroke="#222222"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="left-catalog-section-sections"></ul>
+              </li>
+            </ul>
           </div>
-          <button class="prev" onclick="prevSlide()">Previous</button>
-          <button class="next" onclick="nextSlide()">Next</button>
         </div>
-      </section>
-    </header>
+      </div>
+
+      <img src="./IMG/main-img.jpg" alt="" />
+    </div>
+    <div class="cards-container"></div>
   </body>
   <script src="./JS/main.js"></script>
 </html>
