@@ -1,19 +1,20 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "username": "Marat",
+      "email": "admin@gmail.com",
+      "password": "12345678",
+      "id": 7
     }
   ],
-  "comments": [
+  "products": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "image": "https://mykaleidoscope.ru/uploads/posts/2022-07/1657070753_1-mykaleidoscope-ru-p-krasivie-zolotie-koltsa-s-kamnyami-devushk-1.jpg",
+      "title": "Ringjkre;advlscn",
+      "price": "100$",
+      "category": "rings",
+      "description": "gold",
+      "id": 5
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -144,6 +144,7 @@ loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   await login();
   closeModal();
+  location.reload();
 });
 
 async function login() {
@@ -287,8 +288,15 @@ function getName() {
   } else {
     username.innerText = "";
   }
-}
+  }
 getName();
+if (username.textContent.trim() !== "") {
+  registerBtn.style.display = "none";
+  loginTrigger.style.display = "none";
+} else {
+  registerBtn.style.display = "inline-block";
+  loginTrigger.style.display = "inline-block";
+}
 
 //! categories
 
