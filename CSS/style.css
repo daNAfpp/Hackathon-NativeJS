@@ -344,8 +344,8 @@ hr {
 
 .categories {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 40px;
+  justify-content: flex-start;
+  /* margin-top: 40px; */
 }
 
 .main_content {
@@ -373,7 +373,7 @@ hr {
 }
 
 .catalog-left-menu {
-  width: 350px;
+  width: 100%;
 }
 
 .left-catalog-menu {
@@ -382,13 +382,14 @@ hr {
   letter-spacing: 5px;
   flex: 25;
   margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left-catalog-section {
-  display: block;
-  padding: 10px;
   text-decoration: none;
   color: #333;
+  background-color: #009EFD;
 }
 
 .left-catalog-section:hover {
