@@ -12,34 +12,40 @@
   <body>
     <!--! navbar  -->
     <nav class="nav">
-      <div class="navbar">
-        <div class="container">
-          <div class="nav_top">
-            <div class="nav_top_left">
-              <img src="./IMG/logo.jpg" alt="" />
-            </div>
-            <div class="nav_top__right">
-              <div id="name"></div>
-              <a href="" id="registerBtn" class="navbar_reg">Sign up</a>
-              <a href="" id="loginTrigger" class="navbar_reg">Log in</a>
-              <a href="" id="logout" class="navbar_reg">Log out</a>
-              <p id="username"></p>
-            </div>
+      <div class="container">
+        <div class="nav_top">
+          <div class="nav_top_left">
+            <img class="nav_top_img" src="./IMG/logo.jpg" alt="logo" />
           </div>
-          <div class="nav_bottom">
-            <div class="add">
-              <img src="./IMG/icon-add.png" alt="" />
-              <h2 class="logo">Add product</h2>
-            </div>
+          <div class="nav_top__right">
+            <div id="name"></div>
+            <a href="" id="registerBtn" class="navbar_reg">Sign up</a>
+            <a href="" id="loginTrigger" class="navbar_reg">Log in</a>
+            <a href="" id="logout" class="navbar_reg">Log out</a>
+            <p id="username"></p>
+          </div>
+        </div>
+        <!-- <div class="nav_bottom">
+          <div class="add">
+            <img src="./IMG/icon-add.png" alt="" />
+            <h2 class="logo">Add product</h2>
+          </div> -->
 
-            <form class="search">
-              <input class="search__input" type="search" placeholder="Search" />
-              <button class="btn">Search</button>
-            </form>
-            <div class="text_future">
-              <img src="./img/logo.png" width="200px" alt="" />
-            </div>
+          
+          <div class="text_future">
+            <img src="./img/logo.png" width="200px" alt="" />
           </div>
+        </div>
+      </div>
+    </nav>
+    <nav>
+      <div class="container">
+        <div class="categoria">
+<form class="search">
+            <input class="search__input" type="search" placeholder="Search" />
+            <button class="btn">Search</button>
+          </form>
+
         </div>
       </div>
     </nav>
@@ -83,7 +89,7 @@
     <form class="editProduct modal" style="display: none">
       <h3>Edit product</h3>
       <input id="imgInpEdit" type="text" placeholder="URL to image" />
-      <input iАd="titleInpEdit" type="text" placeholder="Title" />
+      <input id="titleInpEdit" type="text" placeholder="Title" />
       <input id="priceInpEdit" type="text" placeholder="Price" />
       <input id="categoryInpEdit" type="text" placeholder="Category" />
       <textarea
