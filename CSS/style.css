@@ -8,6 +8,19 @@
   padding: 0;
 }
 
+.advertisement {
+  display: block;
+  margin: 0 auto; /* Центрируем картинку */
+  max-width: 100%; /* Устанавливаем максимальную ширину */
+}
+
+.advertisement img {
+  width: 100%; /* Заполняем доступное пространство */
+  height: 100px; /* Автоматически определяем высоту, чтобы сохранить пропорции */
+  display: block;
+  border: none; /* Убираем рамку вокруг изображения */
+}
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
