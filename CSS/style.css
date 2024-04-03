@@ -91,10 +91,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.nav_top__left {
-  align-items: center;
-  display: flex;
-  gap: 20px;
+.nav_top__right {
+}
+.nav_top__left img {
+  width: 100px;
 }
 .nav_top__left p {
   font-size: 12px;
