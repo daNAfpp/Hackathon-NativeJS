@@ -4,6 +4,13 @@
   margin: 0;
   padding: 0;
 }
+.social-icons {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .advertisement {
   display: block;
