@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "username": "Marat",
+      "username": "Marat, Aidana  ",
       "email": "admin@gmail.com",
       "password": "12345678",
       "id": 7
@@ -9,12 +9,36 @@
   ],
   "products": [
     {
-      "image": "https://mykaleidoscope.ru/uploads/posts/2022-07/1657070753_1-mykaleidoscope-ru-p-krasivie-zolotie-koltsa-s-kamnyami-devushk-1.jpg",
-      "title": "Ringjkre;advlscn",
-      "price": "100$",
-      "category": "rings",
-      "description": "gold",
-      "id": 5
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_62_2850_1_1.jpg",
+      "title": "asus rog strix",
+      "price": "1500",
+      "category": "ноутбуки и комплектующие",
+      "description": "топовый топчик\n",
+      "id": 6
+    },
+    {
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_62_2773_7_1.jpg",
+      "title": "lenovo legion",
+      "price": "2000",
+      "category": "ноутбуки и комплектующие",
+      "description": "это вообще топ\n",
+      "id": 7
+    },
+    {
+      "image": "https://s7d1.scene7.com/is/image/dish/iPhone_15_Pro_Max_Natural_1?$ProductBase$&fmt=webp-alpha",
+      "title": "iphone 15",
+      "price": "1100",
+      "category": "телефоны",
+      "description": "это понтыыы это понты",
+      "id": 8
+    },
+    {
+      "image": "https://www.tescomobile.com/media/catalog/product/e/0/e03056827_nda_s24_ultra_logo_ai_spen_onyx_black_1550x2000.png?width=290&height=430&canvas=290,430&optimize=low&fit=bounds",
+      "title": "samsung s24",
+      "price": "1200",
+      "category": "телефоны",
+      "description": "marat\n",
+      "id": 9
     }
   ]
 }

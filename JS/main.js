@@ -1,4 +1,3 @@
-// register connections
 const registerBtn = document.querySelector("#registerBtn");
 const overlay = document.querySelector(".overlay");
 const usernameInp = document.querySelector("#usernameInp");
